@@ -20,15 +20,15 @@ module.exports = {
 
       xxs: { max: "440px" },
 
-      th: { raw: "(max-width: 350px)  " },
+      th: { raw: "(max-width: 350px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" },
 
-      se: { raw: "(max-width: 380px) and (min-width: 350px)" },
+      se: { raw: "(max-width: 380px) and (min-width: 350px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" },
 
-      gal: { raw: "(width: 360px) and (height: 740px)"},
+      gal: { raw: "(width: 360px) and (height: 740px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"},
 
-      nest: { raw: "(width: 1024px) and (height: 600px)" }, 
+      nest: { raw: "(width: 1024px) and (height: 600px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" }, 
 
-      final: {raw: "(width: 1024px) and (height: 600px)"}
+      final: {raw: "(width: 1024px) and (height: 600px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"}
     },
   },
   plugins: [],
