@@ -19,6 +19,14 @@ module.exports = {
       xs: { max: "670px" },
 
       xxs: { max: "440px" },
+
+      th: { raw: "(max-width: 350px)  " },
+
+      se: { raw: "(max-width: 380px) and (min-width: 350px)" },
+
+      gal: { raw: "(width: 360px) and (height: 740px)"},
+
+      nest: { raw: "(width: 1024px) and (height: 600px)" },
     },
   },
   plugins: [],
