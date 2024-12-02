@@ -27,6 +27,8 @@ module.exports = {
       gal: { raw: "(width: 360px) and (height: 740px)"},
 
       nest: { raw: "(width: 1024px) and (height: 600px)" },
+    
+      final: {raw: "(max-height: 700px)"}
     },
   },
   plugins: [],
