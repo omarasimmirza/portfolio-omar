@@ -14,17 +14,17 @@ module.exports = {
     screens: {
       lg: { max: "2023px" },
 
-      se: { max: "1000px" }, // old sm
+      sm: { max: "1000px" },
 
-      th: { max: "670px" }, // old xs
+      xs: { max: "670px" },
 
       xxs: { max: "440px" },
 
-      xs: { raw: "(max-width: 350px) and (orientation: portrait)" }, // old th
+      th: { raw: "(max-width: 350px) and (orientation: portrait)" },
 
-      sm: { raw: "(max-width: 380px) and (min-width: 350px) and (orientation: portrait)" }, // old se
+      se: { raw: "(max-width: 380px) and (min-width: 350px) and (orientation: portrait)" },
 
-      md: { raw: "(width: 360px) and (height: 740px) and (orientation: portrait)"}, // old gal
+      gal: { raw: "(width: 360px) and (height: 740px) and (orientation: portrait)"},
 
       nest: { raw: "(width: 1024px) and (height: 600px) and (orientation: portrait)" }, 
 
