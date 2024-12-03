@@ -7,7 +7,7 @@ function Intro({ darkMode }) {
   const { intro } = portfolioData;
   const { firstName, lastName, welcomeText, description, caption } = intro;
   return (
-    <div className="h-[90vh] flex flex-col items-start justify-center gap-8 pt-[10%] sm:pt-[180%] xs:pt-[0%] th:pb-[0%] se:pb-[0%] xxs:pt-[0%] th:pt-[0%] se:pt-[0%] gal:pb-[0%] gal:pt-[0%] nest:pt-[0%] nest:pb-[0%] final:pt-[0%] final:pb-[0%]">
+    <div className="h-[90vh] flex flex-col items-start justify-center gap-8 pt-[10%] sm:pt-[0%] xs:pt-[180%] th:pb-[0%] se:pb-[0%] xxs:pt-[0%] th:pt-[0%] se:pt-[0%] gal:pb-[0%] gal:pt-[0%] nest:pt-[0%] nest:pb-[0%] final:pt-[0%] final:pb-[0%]">
       <div className="flex w-full mt-10">
         <div className="w-1/2">
           <h1 className={`${darkMode ? "text-light" : "text-primary"}`}>
