@@ -7,7 +7,7 @@ function Intro({ darkMode }) {
   const { intro } = portfolioData;
   const { firstName, lastName, welcomeText, description, caption } = intro;
   return (
-    <div className="h-[90vh] flex flex-col items-start justify-center gap-8 pt-[10%] sm:pt-[20%] xs:pt-[30%] th:pb-[150%] se:pb-[110%] xxs:pt-[10%] th:pt-[150%] se:pt-[110%] gal:pb-[115%] gal:pt-[120%] nest:pt-[60%] nest:pb-[50%] final:pt-[130%] final:pb-[120%]">
+    <div className="h-[90vh] flex flex-col items-start justify-center gap-8 pt-[10%] sm:pt-[20%] xs:pt-[30%] th:pb-[150%] se:pb-[110%] xxs:pt-[130%] xxs:pb[120%] th:pt-[150%] se:pt-[110%] gal:pb-[115%] gal:pt-[120%] nest:pt-[60%] nest:pb-[50%] final:pt-[130%] final:pb-[120%]">
       <div className="flex w-full mt-10">
         <div className="w-1/2">
           <h1 className={`${darkMode ? "text-light" : "text-primary"}`}>
@@ -27,7 +27,7 @@ function Intro({ darkMode }) {
         <div className="w-1/2">
           <img
             src={profile}
-            className={`h-[400px] xs:h-full xxs:h-[50%] xxs:mt-[80%] th:h-[50%] th:mt-[5%] se:mt-[38%] sm:ml-[5%] ml-[40%] border-b-[4px] border-solid ${
+            className={`h-[400px] xs:h-full xxs:h-[50%] xxs:mt-[36%] th:h-[50%] th:mt-[5%] se:mt-[38%] sm:ml-[5%] ml-[40%] border-b-[4px] border-solid ${
               darkMode ? "border-tertiary" : "border-tertiaryLight"
             }`}
           />
