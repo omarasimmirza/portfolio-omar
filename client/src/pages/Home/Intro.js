@@ -27,7 +27,7 @@ function Intro({ darkMode }) {
         <div className="w-1/2">
           <img
             src={profile}
-            className={`h-[400px] xs:h-full xxs:h-[40%] xxs:mt[30%] th:h-[50%] th:mt-[5%] se:mt-[38%] sm:ml-[5%] ml-[40%] border-b-[4px] border-solid ${
+            className={`h-[400px] xs:h-full xxs:h-[40%] xxs:mt-[30%] th:h-[50%] th:mt-[5%] se:mt-[38%] sm:ml-[5%] ml-[40%] border-b-[4px] border-solid ${
               darkMode ? "border-tertiary" : "border-tertiaryLight"
             }`}
           />
