@@ -7,7 +7,7 @@ function Intro({ darkMode }) {
   const { intro } = portfolioData;
   const { firstName, lastName, welcomeText, description, caption } = intro;
   return (
-    <div className="h-[100%] flex flex-col items-start justify-center gap-8 relative pt-20 pb-10 sm:pt-32 xs:pt-48">
+    <div className="h-[100%] flex flex-col items-start justify-center gap-8 relative pt-20 pb-10 sm:pt-32 xs:pt-25">
       <div className="flex w-full mt-10">
         <div className="w-1/2">
           <h1 className={`${darkMode ? "text-light" : "text-primary"}`}>
