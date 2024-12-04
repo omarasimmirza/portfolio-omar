@@ -7,7 +7,7 @@ function Intro({ darkMode }) {
   const { intro } = portfolioData;
   const { firstName, lastName, welcomeText, description, caption } = intro;
   return (
-    <div className="h-[90vh] flex flex-col items-start justify-center gap-8 relative pt-20 pb-10 sm:pt-32 xs:pt-48">
+    <div className="h-[100%] flex flex-col items-start justify-center gap-8 relative pt-20 pb-10 sm:pt-32 xs:pt-48">
       <div className="flex w-full mt-10">
         <div className="w-1/2">
           <h1 className={`${darkMode ? "text-light" : "text-primary"}`}>
@@ -27,7 +27,7 @@ function Intro({ darkMode }) {
         <div className="w-1/2">
           <img
             src={profile}
-            className={`h-[400px] xs:h-full sm:ml-[5%] ml-[40%] border-b-[4px] border-solid ${
+            className={`h-[80%] xs:h-[60%] sm:ml-[5%] ml-[40%] border-b-[4px] border-solid ${
               darkMode ? "border-tertiary" : "border-tertiaryLight"
             }`}
           />
@@ -40,12 +40,13 @@ function Intro({ darkMode }) {
       >
         {description || ""}
       </p>
-      <div className="absolute bottom-0 left-0 w-full xs:hidden">
+      <div className="xs:hidden w-full">
         <lottie-player
           src="https://lottie.host/8715305a-f4ce-47f3-b9bc-e35ecb2731c8/DMqrM5jq3G.json"
           background="transparent"
           speed="1"
           autoplay
+          class="w-[10%] ml-[45%]"
           style={{ maxHeight: "100px" }}
           loop
         />
