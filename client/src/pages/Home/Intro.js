@@ -40,7 +40,7 @@ function Intro({ darkMode }) {
       >
         {description || ""}
       </p>
-      <div className="absolute bottom-0 left-0 w-full xxs:hidden">
+      <div className="absolute bottom-0 left-0 w-full xs:hidden">
         <lottie-player
           src="https://lottie.host/8715305a-f4ce-47f3-b9bc-e35ecb2731c8/DMqrM5jq3G.json"
           background="transparent"
