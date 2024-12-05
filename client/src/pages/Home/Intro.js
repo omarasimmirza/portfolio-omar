@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import profile from "../../resources/profile.png";
+import { AiFillGithub } from "react-icons/ai"; // Import the GitHub icon
 
 function Intro({ darkMode }) {
   const { loading, portfolioData } = useSelector((state) => state.root);
@@ -23,11 +24,23 @@ function Intro({ darkMode }) {
           >
             {caption || ""}
           </h1>
+          {/* git hub icon attached to the github link */}
+          <a
+            href="https://github.com/omarasimmirza/portfolio-omar" // Replace with your actual GitHub URL
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`text-3xl ${
+              darkMode ? "text-light" : "text-primary"
+            } flex hover:text-secondary transition-colors duration-300`}
+          >
+            <AiFillGithub />
+            <p className="ml-[2%] xs:hidden">Link to Portfolio project</p>
+          </a>
         </div>
         <div className="w-1/2">
           <img
             src={profile}
-            className={`h-[80%] xs:h-[45%] sm:ml-[5%] ml-[40%] border-b-[4px] border-solid ${
+            className={`h-[80%] xs:h-[70%] sm:ml-[5%] ml-[40%] border-b-[4px] border-solid ${
               darkMode ? "border-tertiary" : "border-tertiaryLight"
             }`}
           />
