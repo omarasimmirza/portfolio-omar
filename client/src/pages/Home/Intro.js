@@ -8,17 +8,17 @@ function Intro({ darkMode }) {
   const { intro } = portfolioData;
   const { firstName, lastName, welcomeText, description, caption } = intro;
   return (
-    <div className="h-[100%] flex flex-col items-start justify-center gap-8 relative pt-[5%] xs:pt-[15%]">
+    <div className="h-[100%] flex flex-col items-start justify-center pt-[5%] xs:pt-[15%]">
       <div className="flex w-full mt-10">
-        <div className="w-1/2">
+        <div className="w-1/2 flex-col">
           <h1 className={`${darkMode ? "text-light" : "text-primary"}`}>
             {welcomeText || ""}{" "}
           </h1>
-          <h1 className="text-7xl sm:text-5xl text-secondary font-semibold">
+          <h1 className="text-7xl sm:text-5xl text-secondary mt-[1.5rem] font-semibold mt-[1rem]">
             {firstName || ""} {lastName || ""}
           </h1>
           <h1
-            className={`text-7xl sm:text-5xl ${
+            className={`text-7xl sm:text-5xl mt-[1.5rem] ${
               darkMode ? "text-light" : "text-primary"
             } font-semibold`}
           >
@@ -33,8 +33,8 @@ function Intro({ darkMode }) {
               darkMode ? "text-light" : "text-primary"
             } flex hover:text-secondary transition-colors duration-300`}
           >
-            <AiFillGithub />
-            <p className="ml-[2%] xs:hidden">Link to Portfolio project</p>
+            <AiFillGithub className="mt-[1.7rem] mb-[1rem]" />
+            <p className="ml-[2%] xs:hidden mt-[1.5rem] mb-[1rem]">Link to Portfolio project</p>
           </a>
         </div>
         <div className="w-1/2">
@@ -47,7 +47,7 @@ function Intro({ darkMode }) {
         </div>
       </div>
       <p
-        className={`text-lg ${
+        className={`text-lg mb-[1rem] ${
           darkMode ? "text-light" : "text-primary"
         } text-left sm:w-[90vw] w-2/3`}
       >

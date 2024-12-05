@@ -52,7 +52,7 @@ function Projects({darkMode}) {
             <p className={`${darkMode ? 'text-light' : 'text-primary'} text-lg`}>
               {(projects[selectedItemIndex].description || []).map(
                 (point, index) => (
-                  <li key={index}>{point}</li>
+                  <li className="mt-[1rem]" key={index}>{point}</li>
                 )
               )}
             </p>

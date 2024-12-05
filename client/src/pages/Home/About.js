@@ -32,7 +32,7 @@ function About({darkMode}) {
         </h1>
         <div className="flex flex-wrap gap-10 mt-5">
           {skills.map((skill, index) => (
-            <div key={index} className={`${darkMode ? "border-tertiary" : "border-tertiaryLight"} border pb-1 py-3 px-8`}>
+            <div key={index} className={`${darkMode ? "border-tertiary" : "border-tertiaryLight"} border py-3 px-6`}>
               <h1 className={`${darkMode ? "text-tertiary" : "text-tertiaryLight"} text-lg`}>{skill}</h1>
             </div>
           ))}

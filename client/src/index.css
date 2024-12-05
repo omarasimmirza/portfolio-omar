@@ -1,14 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Bayon");
 @import url("https://fonts.googleapis.com/css?family=Aclonica");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-  font-family: "Bayon", "Montserrat";
+  font-family: "Oswald", "Montserrat";
+  font-weight: 500;
 }
+
+.oswald-font {
+  font-family: "Oswald", sans-serif;
+
+}
+
 .header h1{
   margin: 0 !important;
   padding: 0 !important;
@@ -97,7 +105,7 @@ input , textarea{
   height: 40px;
   border: 1px solid gray;
   width: 100%;
-  padding-left: 20px;
+  padding: 20px;
 }
 
 input:focus{
@@ -107,6 +115,6 @@ input:focus{
 
 textarea{
   height: 100px;
-  padding-top: 10px;
+  padding: 10%;
 }
 
